@@ -28,27 +28,28 @@ git remote add sourcecraft https://my-kos:ТОКЕН@git.sourcecraft.dev/my-kos/
 Файл .github/workflows/deploy.yml:
 
 ```yaml
-name: Deploy MkDocs to GitHub Pages
+name: Publish docs via GitHub Pages
 on:
   push:
-    branches: [ main ]
-permissions:
-  contents: write
+    branches:
+      - main
+
 jobs:
-  deploy:
+  build:
+    name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-      - run: pip install mkdocs
-      - run: mkdocs build
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
-          publish_branch: gh-pages
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_DOMAIN: optionaldomain.com
+          CONFIG_FILE: folder/mkdocs.yml
+          EXTRA_PACKAGES: build-base
+          REQUIREMENTS: folder/requirements.txt
 ```
 #### 1.4. Настройка деплоя на Sourcecraft (через UI)
 В веб-интерфейсе Sourcecraft для репозитория указано:
