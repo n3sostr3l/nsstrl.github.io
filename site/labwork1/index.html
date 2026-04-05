@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Lab1 - aweSome mkdocs site</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+    <meta name="author" content="Зекин Владлен (P3121, n3sostr3l)" />
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">aweSome mkdocs site</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">aweSome mkdocs site</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+          <!--
+
+-->
+
+  <li>
+    <span class="side-bar__link side-bar__link--expanded side-bar__link--active">
+      Labs
+    </span>
+    <ul class="side-bar__sub-menu side-bar__sub-menu--visible">
+        
+            <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    Lab1
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab2/" class="side-bar__link ">
+    Lab2
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab3/" class="side-bar__link ">
+    Lab3
+  </a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../main/" class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    About
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">Lab1</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#_2">Цель</a></li>
+                
+            
+                <li><a class="a" href="#_3">Задание</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_4">Основная часть</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_5">Самостоятельная часть</a></li>
+                
+            
+                <li><a class="a" href="#_6">Код</a></li>
+                
+            
+                <li><a class="a" href="#_7">Выводы</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="_1">Лабораторная работа: Создание статического сайта</h1>
+<h2 id="_2">Цель</h2>
+<p>Освоить процесс создания статического сайта с использованием генератора документации <code>MkDocs</code>.
+Научиться организовывать структуру документации проекта (портфолио лабораторных работ).
+Изучить базовые принципы работы с системой контроля версий Git и платформой GitHub.
+Развернуть статический сайт с использованием механизма GitHub Pages на домене вида username.github.io.
+Освоить базовую настройку темы оформления и конфигурационного файла <code>mkdocs.yml</code>.</p>
+<h2 id="_3">Задание</h2>
+<h3 id="_4">Основная часть</h3>
+<p>Создать публичный репозиторий на GitHub для размещения сайта-портфолио.</p>
+<p>Настроить GitHub Pages так, чтобы публикация осуществлялась из каталога /docs ветки main.</p>
+<p>Клонировать репозиторий на локальный компьютер.</p>
+<p>Создать и активировать виртуальное окружение Python.</p>
+<p>Установить MkDocs в виртуальное окружение.</p>
+<p>Настроить файл .gitignore (исключить виртуальное окружение, служебные файлы и др.).</p>
+<p>Создать новый сайт командой:</p>
+<p>mkdocs new source
+Перейти в каталог source и запустить локальный сервер:</p>
+<p>cd source
+mkdocs serve
+Выполнить сборку сайта в каталог /docs корня репозитория:</p>
+<p>mkdocs build -d ../docs
+Выполнить коммит и отправку в удалённый репозиторий (включая каталог source и каталог docs).</p>
+<h3 id="_5">Самостоятельная часть</h3>
+<p>Выбрать и подключить тему оформления (например, dracula, material или иную тему, подходящую для портфолио).</p>
+<p>Настроить файл mkdocs.yml:</p>
+<p>указать название сайта;
+задать тему;
+реализовать структуру меню через параметр nav.
+Создать структуру страниц:</p>
+<p>Главная страница;</p>
+<p>Страница «Об авторе»;</p>
+<p>Раздел «Лабораторные работы»;</p>
+<p>отдельная страница для каждой лабораторной работы курса;
+единый шаблон структуры отчёта (цель, задание, код, выводы).
+Обеспечить корректную навигацию по сайту.</p>
+<p>Выполнить повторную сборку и публикацию сайта.</p>
+<h2 id="_6">Код</h2>
+<pre><code>
+</code></pre>
+<h2 id="_7">Выводы</h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              &#8592; Previous Page
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../lab2/"
+                title="Lab2"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-04-05 15:11:58.601247+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>
