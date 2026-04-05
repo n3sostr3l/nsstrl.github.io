@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Лабораторная работа - aweSome mkdocs site</title>
+  <title>Lab1 - aweSome mkdocs site</title>
 
   <!-- Page description -->
   
@@ -140,17 +140,17 @@
 -->
 
   <li>
-    <span class="side-bar__link side-bar__link--collapsed">
+    <span class="side-bar__link side-bar__link--expanded side-bar__link--active">
       Labs
     </span>
-    <ul class="side-bar__sub-menu ">
+    <ul class="side-bar__sub-menu side-bar__sub-menu--visible">
         
             <!--
 
 -->
 
 <li>
-  <a href="../labwork1/" class="side-bar__link ">
+  <a href="./" class="side-bar__link side-bar__link--active">
     Lab1
   </a>
 </li>
@@ -210,7 +210,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">Лабораторная работа</div>
+        <div class="title-bar__title">Lab1</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -224,11 +224,15 @@
             
                 <li><a class="a" href="#_3">Задание</a></li>
                 
-            
-                <li><a class="a" href="#_4">Код</a></li>
+                    <li class="child-li"><a class="a child" href="#_4">Основная часть</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_5">Самостоятельная часть</a></li>
                 
             
-                <li><a class="a" href="#_5">Выводы</a></li>
+                <li><a class="a" href="#_6">Код</a></li>
+                
+            
+                <li><a class="a" href="#_7">Выводы</a></li>
                 
             
           
@@ -242,13 +246,47 @@
             <div class="card__body">
 
               
-              <h1 id="_1">Лабораторная работа</h1>
+              <h1 id="_1">Лабораторная работа: Создание статического сайта</h1>
 <h2 id="_2">Цель</h2>
+<p>Освоить процесс создания статического сайта с использованием генератора документации <code>MkDocs</code>.
+Научиться организовывать структуру документации проекта (портфолио лабораторных работ).
+Изучить базовые принципы работы с системой контроля версий Git и платформой GitHub.
+Развернуть статический сайт с использованием механизма GitHub Pages на домене вида username.github.io.
+Освоить базовую настройку темы оформления и конфигурационного файла <code>mkdocs.yml</code>.</p>
 <h2 id="_3">Задание</h2>
-<h2 id="_4">Код</h2>
+<h3 id="_4">Основная часть</h3>
+<p>Создать публичный репозиторий на GitHub для размещения сайта-портфолио.</p>
+<p>Настроить GitHub Pages так, чтобы публикация осуществлялась из каталога /docs ветки main.</p>
+<p>Клонировать репозиторий на локальный компьютер.</p>
+<p>Создать и активировать виртуальное окружение Python.</p>
+<p>Установить MkDocs в виртуальное окружение.</p>
+<p>Настроить файл .gitignore (исключить виртуальное окружение, служебные файлы и др.).</p>
+<p>Создать новый сайт командой:</p>
+<p>mkdocs new source
+Перейти в каталог source и запустить локальный сервер:</p>
+<p>cd source
+mkdocs serve
+Выполнить сборку сайта в каталог /docs корня репозитория:</p>
+<p>mkdocs build -d ../docs
+Выполнить коммит и отправку в удалённый репозиторий (включая каталог source и каталог docs).</p>
+<h3 id="_5">Самостоятельная часть</h3>
+<p>Выбрать и подключить тему оформления (например, dracula, material или иную тему, подходящую для портфолио).</p>
+<p>Настроить файл mkdocs.yml:</p>
+<p>указать название сайта;
+задать тему;
+реализовать структуру меню через параметр nav.
+Создать структуру страниц:</p>
+<p>Главная страница;</p>
+<p>Страница «Об авторе»;</p>
+<p>Раздел «Лабораторные работы»;</p>
+<p>отдельная страница для каждой лабораторной работы курса;
+единый шаблон структуры отчёта (цель, задание, код, выводы).
+Обеспечить корректную навигацию по сайту.</p>
+<p>Выполнить повторную сборку и публикацию сайта.</p>
+<h2 id="_6">Код</h2>
 <pre><code>
 </code></pre>
-<h2 id="_5">Выводы</h2>
+<h2 id="_7">Выводы</h2>
               
             </div>
           </div>
@@ -260,6 +298,26 @@
     <footer class="footer">
       <div class="footer__body">
         
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              &#8592; Previous Page
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../lab2/"
+                title="Lab2"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
       </div>
     </footer>
   </div>
@@ -267,7 +325,7 @@
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-04-05 15:11:58.603735+00:00
+  Docs Build Date UTC : 2026-04-05 15:28:10.242165+00:00
   -->
 
   <!--
