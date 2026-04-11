@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Lab4 - aweSome mkdocs site</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+    <meta name="author" content="Зекин Владлен (P3121, n3sostr3l)" />
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">aweSome mkdocs site</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">aweSome mkdocs site</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+          <!--
+
+-->
+
+  <li>
+    <span class="side-bar__link side-bar__link--expanded side-bar__link--active">
+      Labs
+    </span>
+    <ul class="side-bar__sub-menu side-bar__sub-menu--visible">
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../labwork1/" class="side-bar__link ">
+    Lab1
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab2/" class="side-bar__link ">
+    Lab2
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab3/" class="side-bar__link ">
+    Lab3
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    Lab4
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab5/" class="side-bar__link ">
+    Lab5
+  </a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../main/" class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    About
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">Lab4</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#roc-auc-stacking">Предсказание дефолта по кредиту (Бинарная классификация, борьба с дисбалансом классов, ROC-AUC, Stacking)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#1">1. Выполненные действия</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#2">2. Организация данных</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#3">3. Как воспроизвести результаты</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#4-production">4. Интеграция модели в Production (План реализации)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#5-roc-auc">5. Результаты тестирования (Метрика ROC-AUC)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#6">6. Заключение</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="4">Отчет по лабораторной работе 4</h1>
+<h2 id="roc-auc-stacking">Предсказание дефолта по кредиту (Бинарная классификация, борьба с дисбалансом классов, ROC-AUC, Stacking)</h2>
+<h3 id="1">1. Выполненные действия</h3>
+<h4 id="11">1.1. Загрузка и предобработка данных</h4>
+<p>Обучающая и тестовая выборки были загружены из CSV-файлов. В ходе предварительного анализа (EDA) выявлено наличие пропущенных значений в признаках <code>MonthlyIncome</code> и <code>NumberOfDependents</code>. 
+*   Пропуски были заполнены средними значениями по обучающей выборке (<code>fillna(mean)</code>).
+*   Были удалены полные дубликаты строк (<code>drop_duplicates</code>).
+*   <strong>Борьба с дисбалансом классов:</strong> Так как доля дефолтов в выборке составляет всего около 6-7%, был применен метод <strong>Андерсемплинга (Undersampling)</strong> с использованием алгоритмов <code>TomekLinks</code> и <code>ClusterCentroids</code> (библиотека <code>imblearn</code>) для выравнивания классов в обучающей выборке.</p>
+<pre><code class="language-python">from imblearn.under_sampling import TomekLinks
+sampler = TomekLinks()
+training_points_r, training_values_r = sampler.fit_resample(training_points, training_values)
+</code></pre>
+<h4 id="12">1.2. Обучение базовых моделей классификации</h4>
+<p>Были инициализированы и обучены на сбалансированных данных две базовые модели:
+*   Логистическая регрессия (<code>LogisticRegression</code>)
+*   Случайный лес (<code>RandomForestClassifier</code> с параметром <code>n_estimators=100</code>)</p>
+<h4 id="13">1.3. Валидация, анализ матриц ошибок и подбор порога</h4>
+<p>Было доказано, что метрика <strong>Accuracy (доля правильных ответов)</strong> не подходит для данной задачи из-за сильного дисбаланса классов: константная модель, выдающая всегда "0" (нет дефолта), показала точность ~93.2%. 
+Для оценки использовались <strong>Матрицы ошибок (Confusion Matrix)</strong> и <strong>ROC-AUC</strong>. Был исследован сдвиг порога классификации (0.3, 0.5, 0.7) для регулировки баланса между False Positive (выдали кредит потенциальному банкроту) и False Negative (отказали надежному клиенту).</p>
+<h4 id="14">1.4. Самостоятельная работа: Обучение сложных алгоритмов и Ансамблирование</h4>
+<p>В попытке превзойти базовую модель Случайного леса были обучены дополнительные модели:
+*   Метод опорных векторов (<code>SVC</code>)
+*   Метод k-ближайших соседей (<code>KNeighborsClassifier</code> с <code>n_neighbors=50</code>)
+*   <strong>Стэкинг (StackingClassifier)</strong> — мета-модель, объединившая в себе предсказания KNN, Random Forest и SVC, использующая Логистическую регрессию в качестве финального оценщика (final_estimator).</p>
+<pre><code class="language-python">from sklearn.ensemble import StackingClassifier
+mega_ensemble = StackingClassifier(
+    estimators=[(&quot;knn&quot;, knn), (&quot;logreg&quot;, random_forest_model), (&quot;svc&quot;, svc)]
+)
+mega_ensemble.fit(training_points_r, training_values_r)
+</code></pre>
+<h3 id="2">2. Организация данных</h3>
+<ul>
+<li><strong>Объем данных:</strong> 50 000 записей (обучение) и 37 500 записей (тест).</li>
+<li><strong>Целевая переменная:</strong> <code>SeriousDlqin2yrs</code> (1 - просрочка более 90 дней (дефолт), 0 - возврат кредита).</li>
+<li><strong>Признаки:</strong> 10 числовых показателей (возраст, ежемесячный доход, количество кредитов, закредитованность, количество иждивенцев и т.д.).</li>
+<li><strong>Особенность датасета:</strong> Крайне сильный дисбаланс целевой переменной, требующий выбора метрики, нечувствительной к перекосу классов (ROC-AUC).</li>
+</ul>
+<h3 id="3">3. Как воспроизвести результаты</h3>
+<ol>
+<li>Установить зависимости: <code>pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn</code>.</li>
+<li>Поместить файлы <code>training_data.csv</code> и <code>test_data.csv</code> в корневую директорию проекта.</li>
+<li>Запустить ячейки Jupyter Notebook последовательно для прохождения полного цикла от предобработки до расчета метрики ROC-AUC.</li>
+</ol>
+<h3 id="4-production">4. Интеграция модели в Production (План реализации)</h3>
+<p>В рамках анализа процесса вывода модели в боевую среду были выделены ключевые шаги (ML System Design):
+1. Сохранение обученной модели (pickle, joblib, ONNX).
+2. Создание веб-сервиса (API) для обработки запросов.
+3. Получение JSON с анкетными данными клиента.
+4. Выполнение инференса модели (предсказания вероятности дефолта).
+5. Возврат результата скоринга в банковскую систему.</p>
+<h3 id="5-roc-auc">5. Результаты тестирования (Метрика ROC-AUC)</h3>
+<p>Для сравнения использовалась площадь под ROC-кривой (ROC-AUC). Чем ближе значение к 1.0, тем лучше модель разделяет плохих и хороших заемщиков.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Модель классификации</th>
+<th style="text-align: left;">Значение ROC-AUC на тесте</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Логистическая регрессия (Базовая)</strong></td>
+<td style="text-align: left;">0.664</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>K-Nearest Neighbors (KNN)</strong></td>
+<td style="text-align: left;">0.593</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Vector Classifier (SVC)</strong></td>
+<td style="text-align: left;">0.631</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Стэкинг (Mega Ensemble: KNN+RF+SVC)</strong></td>
+<td style="text-align: left;">0.837</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Случайный лес (Random Forest)</strong></td>
+<td style="text-align: left;"><strong>0.842</strong> (Лучший результат)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6">6. Заключение</h3>
+<ol>
+<li><strong>Метрики имеют значение:</strong> Метрика Accuracy бесполезна при сильном дисбалансе классов. Главным инструментом оценки в кредитном скоринге является ROC-AUC и ручной выбор порога вероятности (Trade-off риска и прибыли).</li>
+<li><strong>Превосходство древовидных алгоритмов:</strong> Ансамбли на основе деревьев решений (<code>RandomForest</code>) показали себя значительно лучше линейных моделей и метрических алгоритмов (<code>SVC</code>, <code>KNN</code>), так как они менее чувствительны к выбросам и нелинейным зависимостям в данных (например, возраст или доход).</li>
+<li><strong>Стэкинг не всегда панацея:</strong> Сложный мета-алгоритм (<code>StackingClassifier</code>) показал отличный результат (0.837), но в данном конкретном запуске не смог обойти "чистый" Случайный Лес (0.842). Более того, использование SVC внутри стэкинга существенно увеличивает время обучения модели. Для продакшена в данном случае целесообразнее оставить одиночный оптимизированный Random Forest.</li>
+</ol>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../lab3/"
+                title="Lab3">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../lab5/"
+                title="Lab5"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-04-11 22:32:00.429655+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>
