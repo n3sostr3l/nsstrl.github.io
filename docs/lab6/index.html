@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Lab6 - aweSome mkdocs site</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+    <meta name="author" content="Зекин Владлен (P3121, n3sostr3l)" />
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">aweSome mkdocs site</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">aweSome mkdocs site</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+          <!--
+
+-->
+
+  <li>
+    <span class="side-bar__link side-bar__link--expanded side-bar__link--active">
+      Labs
+    </span>
+    <ul class="side-bar__sub-menu side-bar__sub-menu--visible">
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../labwork1/" class="side-bar__link ">
+    Lab1
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab2/" class="side-bar__link ">
+    Lab2
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab3/" class="side-bar__link ">
+    Lab3
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab4/" class="side-bar__link ">
+    Lab4
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab5/" class="side-bar__link ">
+    Lab5
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    Lab6
+  </a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li>
+  <a href="../lab7.md" class="side-bar__link ">
+    Lab7
+  </a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../main/" class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    About
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">Lab6</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#_1">Введение</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_2">Цель работы</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_3">Описание набора данных</a></li>
+                
+            
+                <li><a class="a" href="#_4">Первичный анализ</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_5">Статистика датафрейма</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_6">Визуализация пропусков</a></li>
+                
+            
+                <li><a class="a" href="#_7">Обработка пропусков</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_8">Методы заполнения</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_9">Результаты обработки</a></li>
+                
+            
+                <li><a class="a" href="#_10">Трансформация данных</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_11">Созданные признаки</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_12">Преобразования типов</a></li>
+                
+            
+                <li><a class="a" href="#_13">Обработка выбросов</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_14">Выявленные выбросы</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_15">Методы обработки</a></li>
+                
+            
+                <li><a class="a" href="#_16">Агрегация и анализ</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_17">Сводные статистики</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_18">Визуализации</a></li>
+                
+            
+                <li><a class="a" href="#_19">Заключение</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_20">Результаты работы</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#_21">Выводы</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="pandas">Отчет по лабораторной работе: Очистка и трансформация данных (Pandas)</h1>
+<p><strong>Группа:</strong> P3121</p>
+<p><strong><a href="https://colab.research.google.com/drive/1_IHPFzJXx8i9BThdq5VLJXpOVmdFaWRF?usp=sharing">Ссылка на Google Colab</a></strong></p>
+<hr />
+<h2 id="_1">Введение</h2>
+<h3 id="_2">Цель работы</h3>
+<p>Освоение методов очистки и трансформации данных с использованием библиотеки <code>pandas</code> на примере реальных данных пассажиров Титаника из соревнования платформы Kaggle.</p>
+<h3 id="_3">Описание набора данных</h3>
+<p>Использовался датасет обучающей выборки <code>train.csv</code>. Набор содержит 891 запись о пассажирах. Признаки описывают демографические показатели (возраст, пол), социальный статус (класс билета), семейное положение (количество родственников на борту), а также целевую переменную — <code>Survived</code> (выжил пассажир или нет, 0/1).</p>
+<hr />
+<h2 id="_4">Первичный анализ</h2>
+<h3 id="_5">Статистика датафрейма</h3>
+<ul>
+<li><strong>Размерность данных:</strong> 891 строка, 12 столбцов.</li>
+<li><strong>Типы данных:</strong> включают числа с плавающей точкой (<code>float64</code>), целые числа (<code>int64</code>) и строки (<code>object</code>).</li>
+<li><strong>Целевая переменная:</strong> <code>Survived</code> имеет среднее значение 0.383, что означает, что выжило около 38.3% пассажиров из обучающей выборки.</li>
+<li><strong>Базовые метрики:</strong> Средний возраст пассажиров составил ~29.7 лет (среди заполненных), средняя стоимость билета (<code>Fare</code>) — 32.20.</li>
+</ul>
+<h3 id="_6">Визуализация пропусков</h3>
+<p>При проверке на пустые значения (<code>isnull().sum()</code>) было выявлено 3 проблемных столбца:
+1. <code>Age</code>: 177 пропусков (~19.8% от всех данных).
+2. <code>Cabin</code>: 687 пропусков (~77.1% от всех данных).
+3. <code>Embarked</code>: 2 пропуска (~0.2%).</p>
+<hr />
+<h2 id="_7">Обработка пропусков</h2>
+<h3 id="_8">Методы заполнения</h3>
+<ul>
+<li>
+<p><strong>Age (Возраст):</strong> После сравнения среднего значения (29.69) и медианы (28.00), было принято решение использовать медиану (28.0). Это позволило избежать искажений из-за выбросов (возрастных пассажиров).</p>
+</li>
+<li>
+<p><strong>Embarked (Порт посадки):</strong> Два пропущенных значения заполнены наиболее часто встречающимся значением (модой) — портом <code>S</code> (Саутгемптон).</p>
+</li>
+<li><strong>Cabin (Каюта):</strong> Так как столбец содержал более 77% пропусков, он был удален. Однако предварительно на его основе был создан новый признак, а пропущенные значения заменены на категорию <code>U</code> (Unknown).</li>
+</ul>
+<h3 id="_9">Результаты обработки</h3>
+<p>Все пропуски были устранены. Процент обработанных пропущенных значений составил <strong>100%</strong>. Датасет больше не содержит значений <code>NaN</code>.</p>
+<hr />
+<h2 id="_10">Трансформация данных</h2>
+<h3 id="_11">Созданные признаки</h3>
+<p>Был проведен Feature Engineering, в результате которого создано 5 новых признаков:
+1. <code>Age_group</code>: Возраст разбит на 5 категориальных корзин: <em>Child</em> (0-12), <em>Teenager</em> (12-18), <em>Young Adult</em> (18-35), <em>Adult</em> (35-60), <em>Senior</em> (60+).
+2. <code>Title</code>: Из столбца <code>Name</code> с помощью регулярных выражений выделены обращения. Редкие титулы (Dr, Rev, Col и др.) объединены в группу <code>Rare</code>, синонимы приведены к стандарту (Mlle -&gt; Miss).
+3. <code>FamilySize</code>: Вычислен как сумма братьев/сестер (<code>SibSp</code>) и родителей/детей (<code>Parch</code>) + 1 (сам пассажир).
+4. <code>IsAlone</code>: Бинарный признак. Равен 1, если <code>FamilySize == 1</code> (пассажир путешествовал один), иначе 0.
+5. <code>Cabin_Letter</code>: Палуба размещения (первая буква из номера каюты: A, B, C... или U).</p>
+<h3 id="_12">Преобразования типов</h3>
+<ul>
+<li>Столбец <code>Pclass</code> из числового формата преобразован в категориальный строковый: 1 → <code>F</code> (First), 2 → <code>S</code> (Second), 3 → <code>T</code> (Third).</li>
+<li>Признак <code>Sex</code> переведен в бинарный числовой формат: <code>male</code> → 0, <code>female</code> → 1, что необходимо для будущих моделей машинного обучения.</li>
+</ul>
+<hr />
+<h2 id="_13">Обработка выбросов</h2>
+<h3 id="_14">Выявленные выбросы</h3>
+<p>Построенный Boxplot для признака <code>Fare</code> (стоимость билета) выявил сильную асимметрию распределения (скошенность вправо). Метод межквартильного размаха (IQR) идентифицировал <strong>116 выбросов</strong>, включая сверхдорогие билеты стоимостью &gt;500. В признаке <code>Age</code> гистограмма показала наличие пассажиров старше 65–70 лет, что также является отклонением от основной массы.
+<img alt="Fare до обработки" src="../image.png" />
+<img alt="Age до обработки" src="../image-1.png" /></p>
+<h3 id="_15">Методы обработки</h3>
+<p>К данным была применена техника <strong>винзоризации</strong> (Winsorization). Экстремальные значения были жестко ограничены 95-м перцентилем (метод <code>.clip()</code>):
+* Значения возраста старше 54 лет были заменены на 54.0.
+* Стоимость билета свыше 112.08 была заменена на 112.08.<br />
+Данный подход сохранил информацию о высоких значениях признаков, но устранил их искажающее влияние на дисперсию модели.</p>
+<p><img alt="Fare после обработки" src="../image-2.png" />
+<img alt="Age после обработки" src="../image-3.png" /></p>
+<hr />
+<h2 id="_16">Агрегация и анализ</h2>
+<h3 id="_17">Сводные статистики</h3>
+<p>С помощью группировок (<code>groupby</code>) и сводных таблиц (<code>pivot_table</code>) были выявлены следующие закономерности:
+1. <strong>Выживаемость по классам:</strong> пассажиры 1-го класса (F) выживали в 62.9% случаев, 2-го (S) — в 47.2%, 3-го (T) — лишь в 24.2%.
+2. <strong>Выживаемость по полу и классу:</strong> Женщины в 1-м и 2-м классах выживали почти гарантированно (96.8% и 92.1%). Среди мужчин наибольший шанс выжить был в 1-м классе (36.8%), а наименьший — в 3-м классе (~13.5%).
+3. <strong>Возраст по портам посадки:</strong> Медианный возраст по всем портам близок к 28 годам (из-за заполнения медианой), однако пассажиры из порта Q (Квинстаун) в среднем путешествовали без семей и чаще покупали билеты 3-го класса.
+4. <strong>Сводная таблица (Age_group, IsAlone, Sex):</strong> Одинокие мужчины-взрослые выживали крайне редко. Самый высокий шанс на спасение имели женщины и дети, путешествующие с семьями (<code>IsAlone=0</code>).</p>
+<h3 id="_18">Визуализации</h3>
+<p>В ходе работы были построены гистограммы распределений, Boxplot для анализа аномалий и тепловая карта (Heatmap) корреляции Пирсона. 
+* Выявлена высокая положительная корреляция (0.54) между полом (<code>Sex=1</code> - женщины) и целевой переменной <code>Survived</code>.
+* Наблюдается отрицательная корреляция (-0.20) между <code>IsAlone</code> и <code>Survived</code> (одинокие спасались реже).
+* Положительная связь (0.31) между стоимостью билета <code>Fare</code> и шансом на спасение.</p>
+<hr />
+<h2 id="_19">Заключение</h2>
+<h3 id="_20">Результаты работы</h3>
+<ol>
+<li>Данные успешно считаны, исследованы и трансформированы.</li>
+<li>Пропущенные значения заполнены с использованием статистических метрик (медиана, мода) или вынесены в отдельную категорию.</li>
+<li>Извлечено 5 новых, семантически значимых признаков, которые лучше описывают данные.</li>
+<li>Аномальные значения обработаны методом винзоризации, что улучшило нормальность распределений.</li>
+<li>Финальный очищенный набор данных сохранен в файл <code>titanic_cleaned.csv</code>.</li>
+</ol>
+<h3 id="_21">Выводы</h3>
+<p>Библиотека <code>pandas</code> показала высокую эффективность для задач Data Preprocessing. С помощью агрегации данных была математически подтверждена историческая концепция рассадки по шлюпкам: "Женщины и дети в первую очередь", а также классовое неравенство на борту. Полученный датафрейм теперь очищен от шума, снабжен новыми фичами и полностью готов для тренировки моделей машинного обучения.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../lab5/"
+                title="Lab5">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../main/"
+                title="Home"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-04-24 12:45:02.436254+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>
